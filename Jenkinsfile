@@ -24,5 +24,8 @@ pipeline {
                 }
             }
         }
+        stage('Static Code Analysis'){
+            build job: 'static-analysis-project'
+        }
     }
 }
